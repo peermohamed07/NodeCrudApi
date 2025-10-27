@@ -2,9 +2,7 @@ import express from "express"
 import movieRoute from './routes/movie.route.js'
 const app=express()
 const PORT=6969;
-app.get('/',(req,res)=>{
-    res.json({msg:"Hello student"});
-})
+app.get('/',movieIndex)
  
 app.use('/movie',movieRoute)
 
